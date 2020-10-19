@@ -1,0 +1,16 @@
+{
+  "name": "node-red-rmpro",
+  "version": "0.0.1",
+  "dependencies": {
+    "js-broadlink": "0.0.6"
+  },
+  "node-red": {
+    "nodes": {
+      "discover": "discover.js",
+      "read-data": "read-data.js",
+      "send-data": "send-data.js",
+      "learning": "learning.js",
+      "temperature": "temperature.js"
+    }
+  }
+}
