@@ -27,6 +27,8 @@ module.exports = function (RED) {
       }
 
       const device = new Device(deviceType, macAddress, ip, 80);
+      const mode = config.learning;
+
       if (mode === "enter") {
         device.enterLearning();
         node.status({ fill: "green", shape: "dot", text: "entered learning mode" });
